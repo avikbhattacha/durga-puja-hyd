@@ -1,1 +1,167 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Durga Puja Parikrama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pujaRed: '#b91c1c',
+                        pujaGold: '#f59e0b',
+                        pujaCream: '#fdf8f5',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pujaCream text-gray-800 antialiased">
+
+    <header class="bg-pujaRed text-white py-16 px-4 text-center border-b-8 border-pujaGold relative">
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Hyderabad Durga Puja Parikrama</h1>
+            <p class="text-lg md:text-xl font-sans text-pujaGold tracking-wide">সার্বজনীন দুর্গোৎসব ২০২৬</p>
+            <p class="mt-4 font-light text-sm md:text-base opacity-90">Your complete guide to the 55+ pandals across the city.</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        
+        <!-- Hi-Tech City Section -->
+        <div class="mb-12">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-serif font-bold text-pujaRed border-b-2 border-pujaGold inline-block pb-2">Hi-Tech City & West Hyderabad</h2>
+            </div>
+            <div id="west-hyd-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+
+        <!-- Central/Secunderabad Section -->
+        <div class="mb-12">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-serif font-bold text-pujaRed border-b-2 border-pujaGold inline-block pb-2">Central & North Hyderabad</h2>
+            </div>
+            <div id="central-hyd-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+
+        <!-- Old City Section -->
+        <div class="mb-12">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-serif font-bold text-pujaRed border-b-2 border-pujaGold inline-block pb-2">Old City & Other Areas</h2>
+            </div>
+            <div id="old-city-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <p>Created for the Hyderabad Bengali Community.</p>
+    </footer>
+
+    <script>
+        const pujas = {
+            west: [
+                { name: "Utsab Cultural Association", location: "NITHM, Gachibowli", cat: "বারোয়ারি (Barowari)", map: "Utsab+Cultural+Association+NITHM+Gachibowli+Hyderabad" },
+                { name: "Cyberabad Bengali Association", location: "World One School, Kondapur", cat: "বারোয়ারি (Barowari)", map: "Cyberabad+Bengali+Association+World+One+School+Kondapur" },
+                { name: "Kondapur Bengali Cultural Assoc.", location: "CCRT, Kondapur", cat: "বারোয়ারি (Barowari)", map: "Kondapur+Bengali+Cultural+Association+CCRT+Kondapur" },
+                { name: "Aparna Serene Park", location: "Masjid Banda Main Road, Kondapur", cat: "Society Puja", map: "Aparna+Serene+Park+Kondapur+Hyderabad" },
+                { name: "Aparna Sarovar", location: "Nallagandla", cat: "Society Puja", map: "Aparna+Sarovar+Nallagandla+Hyderabad" },
+                { name: "Oikotan Hyderabad", location: "Panchavati Community Hall, Manikonda", cat: "বারোয়ারি (Barowari)", map: "Oikotan+Hyderabad+Manikonda" },
+                { name: "AAROHAN Cultural Association", location: "PSR Gardens, Narsingi", cat: "বারোয়ারি (Barowari)", map: "AAROHAN+Cultural+Association+PSR+Gardens+Narsingi" },
+                { name: "Uttaran Bengali Samity", location: "KVMR Garden, Narsingi", cat: "বারোয়ারি (Barowari)", map: "Uttaran+Bengali+Samity+KVMR+Garden+Narsingi" },
+                { name: "Rituranga Kokapet", location: "Sri Hanuman Devalayam, Kokapet", cat: "বারোয়ারি (Barowari)", map: "Rituranga+Kokapet+Sri+Hanuman+Devalayam" },
+                { name: "Kokapet Urban Sarbojonin", location: "Kokapet", cat: "বারোয়ারি (Barowari)", map: "Kokapet+Urban+Sarbojonin" },
+                { name: "Prabashi Bengali Association", location: "Saptapadi Garden, Nizampet", cat: "বারোয়ারি (Barowari)", map: "Prabashi+Bengali+Association+Saptapadi+Garden+Nizampet" },
+                { name: "Rainbow Vista", location: "Moosapet", cat: "Society Puja", map: "Rainbow+Vista+Moosapet" },
+                { name: "PBEL City Durgotsav", location: "PBEL City", cat: "Society Puja", map: "PBEL+City+Hyderabad" },
+                { name: "Udjapan Sanskritik Samiti", location: "Taramati Baradari", cat: "বারোয়ারি (Barowari)", map: "Udjapan+Sanskritik+Samiti+Taramati+Baradari" },
+                { name: "Agomoni Unique Garden", location: "Bandlaguda Jagir", cat: "বারোয়ারি (Barowari)", map: "Agomoni+Unique+Garden+Bandlaguda+Jagir" },
+                { name: "Mantri Celestia", location: "Wipro Circle, Gachibowli", cat: "Society Puja", map: "Mantri+Celestia+Gachibowli" },
+                { name: "Bongo Parbon", location: "Aparna Kanopy Tulip, Gundlapochampally", cat: "Society Puja", map: "Aparna+Kanopy+Tulip+Gundlapochampally" },
+                { name: "Aparna Cyberscape", location: "Serilingampally", cat: "Society Puja", map: "Aparna+Cyberscape+Serilingampally" },
+                { name: "Sur-O-Dhwani", location: "Gachibowli Stadium", cat: "বারোয়ারি (Barowari)", map: "Sur-O-Dhwani+Gachibowli+Stadium" },
+                { name: "TBCA", location: "Ameerpet Stadium", cat: "বারোয়ারি (Barowari)", map: "TBCA+Ameerpet+Stadium" }
+            ],
+            central: [
+                { name: "Attapur Bengali Association", location: "Chinna Ananthagiri Shivalayam", cat: "বারোয়ারি (Barowari)", map: "Attapur+Bengali+Association" },
+                { name: "Bengalee Cultural Association", location: "Banjara Function Hall, Masab Tank", cat: "বারোয়ারি (Barowari)", map: "Bengalee+Cultural+Association+Masab+Tank" },
+                { name: "Bangiya Sanskritik Sangha", location: "Keyes High School, Secunderabad", cat: "বারোয়ারি (Barowari)", map: "Bangiya+Sanskritik+Sangha+Keyes+High+School" },
+                { name: "Bangiya Shiksha Niketan", location: "Telangana Garden, Bowenpally", cat: "বারোয়ারি (Barowari)", map: "Bangiya+Shiksha+Niketan+Bowenpally" },
+                { name: "Bangali Sanskritik Sangha", location: "Shubasree Garden, Alwal", cat: "বারোয়ারি (Barowari)", map: "Bangali+Sanskritik+Sangha+Alwal" },
+                { name: "Bani Sangha", location: "Lakshmi Kala Theatre Lane, Alwal", cat: "বারোয়ারি (Barowari)", map: "Bani+Sangha+Alwal" },
+                { name: "Hyderabad Kalibari", location: "Ammaguda, Sainikpuri", cat: "বারোয়ারি (Barowari)", map: "Hyderabad+Kalibari+Sainikpuri" },
+                { name: "Vedanga Sammilani", location: "Dairy Farm Road, Secunderabad", cat: "বারোয়ারি (Barowari)", map: "Vedanga+Sammilani+Secunderabad" },
+                { name: "Navarun Sangha", location: "Balanagar", cat: "বারোয়ারি (Barowari)", map: "Navarun+Sangha+Balanagar" },
+                { name: "KSBC", location: "AMR Gardens, Kompally", cat: "বারোয়ারি (Barowari)", map: "KSBC+AMR+Gardens+Kompally" },
+                { name: "Bangiya Radha Krishna Mandir", location: "Fox Sagar, Kompally", cat: "বারোয়ারি (Barowari)", map: "Bangiya+Radha+Krishna+Mandir+Fox+Sagar" },
+                { name: "Medchal Bengali Samiti", location: "Medchal", cat: "বারোয়ারি (Barowari)", map: "Medchal+Bengali+Samiti" },
+                { name: "Mallapur Bangiya Sangha", location: "VNR Gardens, Mallapur", cat: "বারোয়ারি (Barowari)", map: "Mallapur+Bangiya+Sangha" },
+                { name: "Bengali Ananda Utsav Sangha", location: "HCL Community Hall, Mallapur", cat: "বারোয়ারি (Barowari)", map: "Bengali+Ananda+Utsav+Sangha+Mallapur" },
+                { name: "Hyd Bengali Swarna Shilpi Mandir", location: "Shamshabad", cat: "বারোয়ারি (Barowari)", map: "Vivekananda+Kali+Mandir+Shamshabad" },
+                { name: "Adi Bari Pujo", location: "Sheshadri Nagar, Rampally", cat: "Bari Pujo", map: "Sheshadri+Nagar+Rampally" },
+                { name: "Air Force Station Begumpet", location: "Begumpet", cat: "Restricted", map: "Air+Force+Station+Begumpet" },
+                { name: "Ramakrishna Mission", location: "Domalguda", cat: "বারোয়ারি (Barowari)", map: "Ramakrishna+Mission+Domalguda" },
+                { name: "Hyderabad Bengalee Samity", location: "NTR Stadium, Domalguda", cat: "বারোয়ারি (Barowari)", map: "Hyderabad+Bengalee+Samity+NTR+Stadium" }
+            ],
+            oldCity: [
+                { name: "Hyderabad Bengali Welfare Assoc.", location: "Minar Garden", cat: "বারোয়ারি (Barowari)", map: "Hyderabad+Bengali+Welfare+Association+Minar+Garden" },
+                { name: "Young Star Association", location: "Gayatri Bhavan", cat: "বারোয়ারি (Barowari)", map: "Gayatri+Bhavan+Hyderabad" },
+                { name: "Hyd Charkaman Bengali Samithi", location: "P. Satyanarayan Bhavan", cat: "বারোয়ারি (Barowari)", map: "P+Satyanarayan+Bhavan+Hyderabad" },
+                { name: "Swami Vivekanando Sangha", location: "Library Bhavan", cat: "বারোয়ারি (Barowari)", map: "Library+Bhavan+Hyderabad" },
+                { name: "Ramkrishna Bengali Seva Samiti", location: "Murlidhar Temple", cat: "বারোয়ারি (Barowari)", map: "Murlidhar+Temple+Hyderabad" },
+                { name: "Chelapura Bengali Association", location: "Chelapura", cat: "বারোয়ারি (Barowari)", map: "Chelapura+Hyderabad" },
+                { name: "Bengali Durga Utsab Committee", location: "Quli Qutub Shah Stadium", cat: "বারোয়ারি (Barowari)", map: "Quli+Qutub+Shah+Stadium" },
+                { name: "Navajagran Association", location: "Begum Bazar", cat: "বারোয়ারি (Barowari)", map: "Begum+Bazar+Hyderabad" },
+                { name: "Bajrang Vyamshala Durga Puja", location: "Bandi ke Adda", cat: "বারোয়ারি (Barowari)", map: "Bandi+ke+Adda+Hyderabad" },
+                { name: "Hyd Charminar Bengali Samity", location: "Rajasthan Bhavan", cat: "বারোয়ারি (Barowari)", map: "Rajasthan+Bhavan+Hyderabad" },
+                { name: "Netaji Sangho", location: "Kalikaman", cat: "বারোয়ারি (Barowari)", map: "Kalikaman+Hyderabad" },
+                { name: "Subh Bhavan", location: "Gulzar Houz", cat: "বারোয়ারি (Barowari)", map: "Gulzar+Houz+Hyderabad" },
+                { name: "Laldarwaja Bengali Samity", location: "Gowlipura", cat: "বারোয়ারি (Barowari)", map: "Gowlipura+Hyderabad" },
+                { name: "Bengali Swarnashilpi Association", location: "Bolton Rd, Secunderabad", cat: "বারোয়ারি (Barowari)", map: "Surabhi+Garden+Secunderabad" },
+                { name: "Chitra Sarbojanin Durgautsav", location: "Gym Khana Ground", cat: "বারোয়ারি (Barowari)", map: "Gymkhana+Ground+Hyderabad" },
+                { name: "Hyderabad Bengali Association", location: "NTR Stadium", cat: "বারোয়ারি (Barowari)", map: "NTR+Stadium+Hyderabad" }
+            ]
+        };
+
+        function renderCards(dataArray, containerId) {
+            const container = document.getElementById(containerId);
+            dataArray.forEach(puja => {
+                const isBarowari = puja.cat.includes("Barowari");
+                const badgeColor = isBarowari ? "bg-pujaGold text-red-900" : "bg-gray-200 text-gray-700";
+                
+                container.innerHTML += `
+                    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
+                        <div class="p-6 flex-grow">
+                            <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full ${badgeColor} mb-3">
+                                ${puja.cat}
+                            </span>
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-2">${puja.name}</h3>
+                            <p class="text-gray-600 text-sm flex items-start">
+                                <svg class="w-4 h-4 mr-1 mt-0.5 text-pujaRed flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                ${puja.location}
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 border-t border-gray-100 p-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=${puja.map}" target="_blank" class="block w-full text-center text-sm font-semibold text-pujaRed hover:text-red-900 transition">
+                                View on Google Maps →
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        renderCards(pujas.west, 'west-hyd-grid');
+        renderCards(pujas.central, 'central-hyd-grid');
+        renderCards(pujas.oldCity, 'old-city-grid');
+    </script>
+</body>
+</html>

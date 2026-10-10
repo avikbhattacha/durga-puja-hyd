@@ -30,7 +30,7 @@
         <div class="relative z-10 max-w-4xl mx-auto">
             <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Hyderabad Durga Puja Parikrama</h1>
             <p class="text-lg md:text-xl font-sans text-pujaGold tracking-wide">সার্বজনীন দুর্গোৎসব ২০২৬</p>
-            <p class="mt-4 font-light text-sm md:text-base opacity-90">Your complete guide to the 55+ pandals across the city.</p>
+            <p class="mt-4 font-light text-sm md:text-base opacity-90">Your verified guide to 54 pandals across the city.</p>
         </div>
     </header>
 
@@ -69,65 +69,64 @@
     <script>
         const pujas = {
             west: [
-                { name: "Utsab Cultural Association", location: "NITHM, Gachibowli", cat: "বারোয়ারি (Barowari)", map: "Utsab+Cultural+Association+NITHM+Gachibowli+Hyderabad" },
-                { name: "Cyberabad Bengali Association", location: "World One School, Kondapur", cat: "বারোয়ারি (Barowari)", map: "Cyberabad+Bengali+Association+World+One+School+Kondapur" },
-                { name: "Kondapur Bengali Cultural Assoc.", location: "CCRT, Kondapur", cat: "বারোয়ারি (Barowari)", map: "Kondapur+Bengali+Cultural+Association+CCRT+Kondapur" },
-                { name: "Aparna Serene Park", location: "Masjid Banda Main Road, Kondapur", cat: "Society Puja", map: "Aparna+Serene+Park+Kondapur+Hyderabad" },
-                { name: "Aparna Sarovar", location: "Nallagandla", cat: "Society Puja", map: "Aparna+Sarovar+Nallagandla+Hyderabad" },
-                { name: "Oikotan Hyderabad", location: "Panchavati Community Hall, Manikonda", cat: "বারোয়ারি (Barowari)", map: "Oikotan+Hyderabad+Manikonda" },
-                { name: "AAROHAN Cultural Association", location: "PSR Gardens, Narsingi", cat: "বারোয়ারি (Barowari)", map: "AAROHAN+Cultural+Association+PSR+Gardens+Narsingi" },
-                { name: "Uttaran Bengali Samity", location: "KVMR Garden, Narsingi", cat: "বারোয়ারি (Barowari)", map: "Uttaran+Bengali+Samity+KVMR+Garden+Narsingi" },
-                { name: "Rituranga Kokapet", location: "Sri Hanuman Devalayam, Kokapet", cat: "বারোয়ারি (Barowari)", map: "Rituranga+Kokapet+Sri+Hanuman+Devalayam" },
-                { name: "Kokapet Urban Sarbojonin", location: "Kokapet", cat: "বারোয়ারি (Barowari)", map: "Kokapet+Urban+Sarbojonin" },
-                { name: "Prabashi Bengali Association", location: "Saptapadi Garden, Nizampet", cat: "বারোয়ারি (Barowari)", map: "Prabashi+Bengali+Association+Saptapadi+Garden+Nizampet" },
-                { name: "Rainbow Vista", location: "Moosapet", cat: "Society Puja", map: "Rainbow+Vista+Moosapet" },
-                { name: "PBEL City Durgotsav", location: "PBEL City", cat: "Society Puja", map: "PBEL+City+Hyderabad" },
-                { name: "Udjapan Sanskritik Samiti", location: "Taramati Baradari", cat: "বারোয়ারি (Barowari)", map: "Udjapan+Sanskritik+Samiti+Taramati+Baradari" },
-                { name: "Agomoni Unique Garden", location: "Bandlaguda Jagir", cat: "বারোয়ারি (Barowari)", map: "Agomoni+Unique+Garden+Bandlaguda+Jagir" },
-                { name: "Mantri Celestia", location: "Wipro Circle, Gachibowli", cat: "Society Puja", map: "Mantri+Celestia+Gachibowli" },
-                { name: "Bongo Parbon", location: "Aparna Kanopy Tulip, Gundlapochampally", cat: "Society Puja", map: "Aparna+Kanopy+Tulip+Gundlapochampally" },
-                { name: "Aparna Cyberscape", location: "Serilingampally", cat: "Society Puja", map: "Aparna+Cyberscape+Serilingampally" },
-                { name: "Sur-O-Dhwani", location: "Gachibowli Stadium", cat: "বারোয়ারি (Barowari)", map: "Sur-O-Dhwani+Gachibowli+Stadium" },
-                { name: "TBCA", location: "Ameerpet Stadium", cat: "বারোয়ারি (Barowari)", map: "TBCA+Ameerpet+Stadium" }
+                { name: "Utsab Cultural Association", location: "NITHM, Gachibowli", cat: "বারোয়ারি (Barowari)", map: "NITHM+Gachibowli+Hyderabad" },
+                { name: "Cyberabad Bengali Association (CBA)", location: "World One School, Kondapur", cat: "বারোয়ারি (Barowari)", map: "World+One+School+Kondapur+Hyderabad" },
+                { name: "Kondapur Bengali Cultural Assoc.", location: "CCRT, Kondapur", cat: "বারোয়ারি (Barowari)", map: "CCRT+Kondapur+Hyderabad" },
+                { name: "Aparna Serene Park", location: "Masjid Banda Main Road, Kondapur", cat: "Society Puja (Restricted)", map: "Aparna+Serene+Park+Kondapur+Hyderabad" },
+                { name: "Aparna Sarovar", location: "Nallagandla", cat: "Society Puja (Restricted)", map: "Aparna+Sarovar+Nallagandla+Hyderabad" },
+                { name: "Oikotan Hyderabad", location: "Panchavati Community Hall, Manikonda", cat: "বারোয়ারি (Barowari)", map: "Panchavati+Community+Hall+Manikonda+Hyderabad" },
+                { name: "AAROHAN Cultural Association", location: "PSR Gardens, Narsingi", cat: "বারোয়ারি (Barowari)", map: "PSR+Gardens+Narsingi+Hyderabad" },
+                { name: "Uttaran Bangiya Samity", location: "KVMR Garden, Narsingi", cat: "বারোয়ারি (Barowari)", map: "KVMR+Garden+Narsingi+Hyderabad" },
+                { name: "Rituranga Kokapet", location: "Sri Hanuman Devalayam, Kokapet", cat: "বারোয়ারি (Barowari)", map: "Sri+Hanuman+Devalayam+Kokapet+Hyderabad" },
+                { name: "Kokapet Urban Sarbojonin", location: "Kokapet", cat: "বারোয়ারি (Barowari)", map: "Kokapet+Hyderabad" },
+                { name: "Prabashi Bengali Association", location: "Saptapadi Garden, Nizampet", cat: "বারোয়ারি (Barowari)", map: "Saptapadi+Garden+Function+Hall+Nizampet+Hyderabad" },
+                { name: "Rainbow Vista", location: "Moosapet", cat: "Society Puja (Restricted)", map: "Rainbow+Vistas+Moosapet+Hyderabad" },
+                { name: "PBEL City Durgotsav", location: "PBEL City", cat: "Society Puja (Restricted)", map: "PBEL+City+Appa+Junction+Hyderabad" },
+                { name: "Udjapan Sanskritik Samiti", location: "Taramati Baradari", cat: "বারোয়ারি (Barowari)", map: "Taramati+Baradari+Hyderabad" },
+                { name: "Agomoni Unique Garden", location: "Bandlaguda Jagir", cat: "বারোয়ারি (Barowari)", map: "Unique+Garden+Function+Hall+Bandlaguda+Jagir+Hyderabad" },
+                { name: "Mantri Celestia", location: "Wipro Circle, Gachibowli", cat: "Society Puja (Restricted)", map: "Mantri+Celestia+Gachibowli+Hyderabad" },
+                { name: "Bongo Parbon", location: "Aparna Kanopy Tulip, Gundlapochampally", cat: "Society Puja (Restricted)", map: "Aparna+Kanopy+Tulip+Gundlapochampally+Hyderabad" },
+                { name: "Aparna Cyberscape", location: "Serilingampally", cat: "Society Puja (Restricted)", map: "Aparna+Cyberscape+Nallagandla+Hyderabad" },
+                { name: "Sur-O-Dhwani", location: "Gachibowli Stadium", cat: "বারোয়ারি (Barowari)", map: "Gachibowli+Stadium+Hyderabad" },
+                { name: "TBCA", location: "Ameerpet Stadium", cat: "বারোয়ারি (Barowari)", map: "GHMC+Playground+Ameerpet+Hyderabad" }
             ],
             central: [
-                { name: "Attapur Bengali Association", location: "Chinna Ananthagiri Shivalayam", cat: "বারোয়ারি (Barowari)", map: "Attapur+Bengali+Association" },
-                { name: "Bengalee Cultural Association", location: "Banjara Function Hall, Masab Tank", cat: "বারোয়ারি (Barowari)", map: "Bengalee+Cultural+Association+Masab+Tank" },
-                { name: "Bangiya Sanskritik Sangha", location: "Keyes High School, Secunderabad", cat: "বারোয়ারি (Barowari)", map: "Bangiya+Sanskritik+Sangha+Keyes+High+School" },
-                { name: "Bangiya Shiksha Niketan", location: "Telangana Garden, Bowenpally", cat: "বারোয়ারি (Barowari)", map: "Bangiya+Shiksha+Niketan+Bowenpally" },
-                { name: "Bangali Sanskritik Sangha", location: "Shubasree Garden, Alwal", cat: "বারোয়ারি (Barowari)", map: "Bangali+Sanskritik+Sangha+Alwal" },
-                { name: "Bani Sangha", location: "Lakshmi Kala Theatre Lane, Alwal", cat: "বারোয়ারি (Barowari)", map: "Bani+Sangha+Alwal" },
-                { name: "Hyderabad Kalibari", location: "Ammaguda, Sainikpuri", cat: "বারোয়ারি (Barowari)", map: "Hyderabad+Kalibari+Sainikpuri" },
-                { name: "Vedanga Sammilani", location: "Dairy Farm Road, Secunderabad", cat: "বারোয়ারি (Barowari)", map: "Vedanga+Sammilani+Secunderabad" },
-                { name: "Navarun Sangha", location: "Balanagar", cat: "বারোয়ারি (Barowari)", map: "Navarun+Sangha+Balanagar" },
-                { name: "KSBC", location: "AMR Gardens, Kompally", cat: "বারোয়ারি (Barowari)", map: "KSBC+AMR+Gardens+Kompally" },
-                { name: "Bangiya Radha Krishna Mandir", location: "Fox Sagar, Kompally", cat: "বারোয়ারি (Barowari)", map: "Bangiya+Radha+Krishna+Mandir+Fox+Sagar" },
-                { name: "Medchal Bengali Samiti", location: "Medchal", cat: "বারোয়ারি (Barowari)", map: "Medchal+Bengali+Samiti" },
-                { name: "Mallapur Bangiya Sangha", location: "VNR Gardens, Mallapur", cat: "বারোয়ারি (Barowari)", map: "Mallapur+Bangiya+Sangha" },
-                { name: "Bengali Ananda Utsav Sangha", location: "HCL Community Hall, Mallapur", cat: "বারোয়ারি (Barowari)", map: "Bengali+Ananda+Utsav+Sangha+Mallapur" },
-                { name: "Hyd Bengali Swarna Shilpi Mandir", location: "Shamshabad", cat: "বারোয়ারি (Barowari)", map: "Vivekananda+Kali+Mandir+Shamshabad" },
-                { name: "Adi Bari Pujo", location: "Sheshadri Nagar, Rampally", cat: "Bari Pujo", map: "Sheshadri+Nagar+Rampally" },
-                { name: "Air Force Station Begumpet", location: "Begumpet", cat: "Restricted", map: "Air+Force+Station+Begumpet" },
-                { name: "Ramakrishna Mission", location: "Domalguda", cat: "বারোয়ারি (Barowari)", map: "Ramakrishna+Mission+Domalguda" },
-                { name: "Hyderabad Bengalee Samity", location: "NTR Stadium, Domalguda", cat: "বারোয়ারি (Barowari)", map: "Hyderabad+Bengalee+Samity+NTR+Stadium" }
+                { name: "Attapur Bengali Association", location: "Chinna Ananthagiri Shivalayam", cat: "বারোয়ারি (Barowari)", map: "Chinna+Ananthagiri+Shivalayam+Attapur+Hyderabad" },
+                { name: "Bengalee Cultural Association", location: "Banjara Function Hall, Masab Tank", cat: "বারোয়ারি (Barowari)", map: "Banjara+Function+Hall+Masab+Tank+Hyderabad" },
+                { name: "Bangiya Sanskritik Sangha", location: "Keyes High School, Secunderabad", cat: "বারোয়ারি (Barowari)", map: "Keyes+High+School+Secunderabad" },
+                { name: "Bangiya Shiksha Niketan", location: "Telangana Garden, Bowenpally", cat: "বারোয়ারি (Barowari)", map: "Telangana+Garden+Function+Hall+Bowenpally+Hyderabad" },
+                { name: "Bangali Sanskritik Sangha", location: "Shubasree Garden, Alwal", cat: "বারোয়ারি (Barowari)", map: "Shubasree+Garden+Alwal+Hyderabad" },
+                { name: "Bani Sangha", location: "Lakshmi Kala Theatre Lane, Alwal", cat: "বারোয়ারি (Barowari)", map: "Lakshmi+Kala+Theatre+Alwal+Hyderabad" },
+                { name: "Hyderabad Kalibari", location: "Ammaguda, Sainikpuri", cat: "বারোয়ারি (Barowari)", map: "Hyderabad+Kalibari+Sainikpuri+Secunderabad" },
+                { name: "Vedanga Sammilani", location: "Dairy Farm Road, Secunderabad", cat: "বারোয়ারি (Barowari)", map: "Dairy+Farm+Road+Secunderabad" },
+                { name: "Navarun Sangha", location: "Balanagar", cat: "বারোয়ারি (Barowari)", map: "Balanagar+Hyderabad" },
+                { name: "KSBC", location: "AMR Gardens, Kompally", cat: "বারোয়ারি (Barowari)", map: "AMR+Gardens+Kompally+Hyderabad" },
+                { name: "Bangiya Radha Krishna Mandir", location: "Fox Sagar, Kompally", cat: "বারোয়ারি (Barowari)", map: "Fox+Sagar+Jeedimetla+Hyderabad" },
+                { name: "Medchal Bengali Samiti", location: "Medchal", cat: "বারোয়ারি (Barowari)", map: "Medchal+Hyderabad" },
+                { name: "Mallapur Bangiya Sangha", location: "VNR Gardens, Mallapur", cat: "বারোয়ারি (Barowari)", map: "VNR+Gardens+Mallapur+Hyderabad" },
+                { name: "Bengali Ananda Utsav Sangha", location: "HCL Community Hall, Mallapur", cat: "বারোয়ারি (Barowari)", map: "HCL+Community+Hall+Mallapur+Hyderabad" },
+                { name: "Hyd Bengali Swarna Shilpi Mandir", location: "Shamshabad", cat: "বারোয়ারি (Barowari)", map: "Vivekananda+Kali+Mandir+Shamshabad+Hyderabad" },
+                { name: "Adi Bari Pujo", location: "Sheshadri Nagar, Rampally", cat: "Bari Pujo (Private)", map: "Sheshadri+Nagar+Rampally+Hyderabad" },
+                { name: "Air Force Station Begumpet", location: "Begumpet", cat: "Institutional (Restricted)", map: "Air+Force+Station+Begumpet+Hyderabad" },
+                { name: "Hyderabad Bengalee Samity", location: "NTR Stadium, Domalguda", cat: "বারোয়ারি (Barowari)", map: "NTR+Stadium+Domalguda+Hyderabad" },
+                { name: "Ramakrishna Mission", location: "Domalguda", cat: "বারোয়ারি (Barowari)", map: "Ramakrishna+Math+Domalguda+Hyderabad" },
+                { name: "Bengali Swarnashilpi Association", location: "Surabhi Garden, Bolton Rd", cat: "বারোয়ারি (Barowari)", map: "Surabhi+Garden+Bolton+Road+Secunderabad" },
+                { name: "Chitra Sarbojanin Durgautsav", location: "Gym Khana Ground", cat: "বারোয়ারি (Barowari)", map: "Gymkhana+Grounds+Secunderabad" }
             ],
             oldCity: [
-                { name: "Hyderabad Bengali Welfare Assoc.", location: "Minar Garden", cat: "বারোয়ারি (Barowari)", map: "Hyderabad+Bengali+Welfare+Association+Minar+Garden" },
+                { name: "Hyderabad Bengali Welfare Assoc.", location: "Minar Garden", cat: "বারোয়ারি (Barowari)", map: "Minar+Garden+Salarjung+Museum+Hyderabad" },
                 { name: "Young Star Association", location: "Gayatri Bhavan", cat: "বারোয়ারি (Barowari)", map: "Gayatri+Bhavan+Hyderabad" },
                 { name: "Hyd Charkaman Bengali Samithi", location: "P. Satyanarayan Bhavan", cat: "বারোয়ারি (Barowari)", map: "P+Satyanarayan+Bhavan+Hyderabad" },
                 { name: "Swami Vivekanando Sangha", location: "Library Bhavan", cat: "বারোয়ারি (Barowari)", map: "Library+Bhavan+Hyderabad" },
-                { name: "Ramkrishna Bengali Seva Samiti", location: "Murlidhar Temple", cat: "বারোয়ারি (Barowari)", map: "Murlidhar+Temple+Hyderabad" },
+                { name: "Ramkrishna Bengali Seva Samiti", location: "Murlidhar Temple", cat: "বারোয়ারি (Barowari)", map: "Murlidhar+Bagh+Hyderabad" },
                 { name: "Chelapura Bengali Association", location: "Chelapura", cat: "বারোয়ারি (Barowari)", map: "Chelapura+Hyderabad" },
-                { name: "Bengali Durga Utsab Committee", location: "Quli Qutub Shah Stadium", cat: "বারোয়ারি (Barowari)", map: "Quli+Qutub+Shah+Stadium" },
+                { name: "Bengali Durga Utsab Committee", location: "Quli Qutub Shah Stadium", cat: "বারোয়ারি (Barowari)", map: "Quli+Qutub+Shah+Stadium+Hyderabad" },
                 { name: "Navajagran Association", location: "Begum Bazar", cat: "বারোয়ারি (Barowari)", map: "Begum+Bazar+Hyderabad" },
-                { name: "Bajrang Vyamshala Durga Puja", location: "Bandi ke Adda", cat: "বারোয়ারি (Barowari)", map: "Bandi+ke+Adda+Hyderabad" },
+                { name: "Bajrang Vyamshala Durga Puja", location: "Bandi ke Adda", cat: "বারোয়ারি (Barowari)", map: "Bandi+ka+Adda+Hyderabad" },
                 { name: "Hyd Charminar Bengali Samity", location: "Rajasthan Bhavan", cat: "বারোয়ারি (Barowari)", map: "Rajasthan+Bhavan+Hyderabad" },
-                { name: "Netaji Sangho", location: "Kalikaman", cat: "বারোয়ারি (Barowari)", map: "Kalikaman+Hyderabad" },
+                { name: "Netaji Sangho", location: "Kalikaman", cat: "বারোয়ারি (Barowari)", map: "Kali+Kaman+Hyderabad" },
                 { name: "Subh Bhavan", location: "Gulzar Houz", cat: "বারোয়ারি (Barowari)", map: "Gulzar+Houz+Hyderabad" },
-                { name: "Laldarwaja Bengali Samity", location: "Gowlipura", cat: "বারোয়ারি (Barowari)", map: "Gowlipura+Hyderabad" },
-                { name: "Bengali Swarnashilpi Association", location: "Bolton Rd, Secunderabad", cat: "বারোয়ারি (Barowari)", map: "Surabhi+Garden+Secunderabad" },
-                { name: "Chitra Sarbojanin Durgautsav", location: "Gym Khana Ground", cat: "বারোয়ারি (Barowari)", map: "Gymkhana+Ground+Hyderabad" },
-                { name: "Hyderabad Bengali Association", location: "NTR Stadium", cat: "বারোয়ারি (Barowari)", map: "NTR+Stadium+Hyderabad" }
+                { name: "Laldarwaja Bengali Samity", location: "Shiva Parvati Function Hall, Gowlipura", cat: "বারোয়ারি (Barowari)", map: "Shiva+Parvati+Function+Hall+Gowlipura+Hyderabad" }
             ]
         };
 
